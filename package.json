@@ -1,0 +1,10 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "description": "Testing the Grunt Component Builder",
+  "repository": "sankargorthi/test",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-component-build": "~0.4.0"
+  }
+}
