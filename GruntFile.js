@@ -3,13 +3,22 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         componentbuild: {
-            options: {
-                dev: true,
-                sourceUrls: true
-            },
-            components: {
+            build: {
                 options: {
-                    name: 'build'
+                    name: 'build',
+                    dev: true,
+                    sourceUrls: true
+                },
+                src: '.',
+                dest: './build'
+            },
+            dist: {
+                options: {
+                    name: 'dist',
+                    dev: false,
+                    sourceUrls: false,
+                    noRequire: true,
+                    standalone: true
                 },
                 src: '.',
                 dest: './build'
@@ -19,6 +28,7 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-component-build');
 
-    grunt.registerTask('default', [ 'componentbuild' ]);
+    grunt.registerTask('default', [ 'componentbuild:build' ]);
+    grunt.registerTask('dist', [ 'componentbuild:dist' ]);
 };
 
