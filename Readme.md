@@ -1,18 +1,11 @@
-
 # test
 
   Tests the new Grunt Component Builder
 
-## Installation
+## Usage
 
-  Install with [component(1)](http://component.io):
+    $ npm install
+    $ grunt
 
-    $ component install sankargorthi/test
+Demonstrates that the default config doesn't seem to generate any output
 
-## API
-
-
-
-## License
-
-  MIT
