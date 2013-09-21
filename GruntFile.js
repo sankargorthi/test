@@ -9,10 +9,10 @@ module.exports = function(grunt) {
             },
             components: {
                 options: {
-                    name: 'dev'
+                    name: 'build'
                 },
-                src: 'test',
-                dest: 'test/build'
+                src: '.',
+                dest: './build'
             }
         }
     });
